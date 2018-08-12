@@ -13,4 +13,4 @@ function isEmptyObj(obj) {
 	return (count == 0) ? true : false;
 }
 
-console.log((isEmptyObj(newObj)) ? true : 'Нет, этот объект не пустой. В нем ' + count + ' штук объектов');
+console.log((isEmptyObj(newObj)) ? true : 'Нет, этот объект не пустой. В нем ' + count + ' штук объектов.');
