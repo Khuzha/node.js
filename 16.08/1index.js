@@ -1,3 +1,5 @@
+//Копирование объектов
+
 var m = { name: "Sardor" };
 var n = m;
 console.log('m.name = ' + m.name);
