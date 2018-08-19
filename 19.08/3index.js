@@ -1,4 +1,4 @@
-//КОД НЕ ДОРАБОТАН!
+//КОД НЕ ДОРАБОТАН! Тут должен быть использован метод splice(): https://learn.javascript.ru/array-methods#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-splice
 const prompt = require('prompt-sync')();
 let names = [];
 let i = 0;
@@ -63,9 +63,8 @@ if (ans) {
 				}
 			}
 		}
-	} //else {
-	//max = +prompt('Отлично. Введите числовым значением, сколько имен Вы хотите удалить после имени ' + names[min]);
-
+	} else {
+	max = +prompt('Отлично. Введите числовым значением, сколько имен Вы хотите удалить после имени ' + names[min]);
 }
  else {
 	console.log('Хорошо. До свидания!');
