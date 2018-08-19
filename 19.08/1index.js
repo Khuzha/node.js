@@ -12,3 +12,12 @@ function getRandomInt(min, max) {
 }
 
 console.log('Айфон Х выигрывает... барабанная дробь...:' + arrayOfNames[getRandomInt(0, arrayOfNames.length)]);
+
+/*Пример вывода в консоли:
+
+oneuser@OnePC:~/MyProjects/js/19.08$ node 1index.js 
+
+Все участники конкурса: Сардор, Вася, Петя, Коля, Боря
+Айфон Х выигрывает... барабанная дробь...: Вася
+
+*/
