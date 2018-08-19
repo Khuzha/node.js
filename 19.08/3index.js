@@ -1,6 +1,20 @@
-for (var a = 1; a > 0; a++) {
-	if(a > 10) {
-		break;
+const prompt = require('prompt-sync')();
+
+let names = [];
+
+for (let i = 0; true; i++) {
+	let answer;
+
+	if (i === 0){
+		answer = prompt('perviy');
 	}
-	console.log(a);
+
+	answer = prompt('neperviy');
+
+	if(answer == ''){
+		console.log(names);
+		break;
+	} else {
+	(names[i] = answer); 
+	}
 }
