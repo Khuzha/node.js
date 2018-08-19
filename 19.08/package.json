@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "npm": "^6.4.0",
     "prompt-sync": "^4.1.6"
   }
 }
