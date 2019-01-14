@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <head>
     <title><%= obj.title %></title>
+    <link rel="stylesheet" href="/static/css/main.css">
     <meta charset="utf-8">
 </head>
 <body>
+    <% include blocks/header.ejs %>
     <h1>Новость с id = <%= newsId %></h1>
     <ul>
         <% for(let key of obj.arr) { %>
