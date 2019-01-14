@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "nodemon index.js"
+    "test": "nodemon router.js"
   },
   "keywords": [],
   "author": "",
