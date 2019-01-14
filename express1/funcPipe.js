@@ -13,12 +13,25 @@ let parser = async () => {
     const myWriter = fs.createWriteStream('./new.html') //writing file by chunks
     html.pipe(myWriter)
 
-    const server = http.createServer((req, res) => {
+    /* const server = http.createServer((req, res) => {
         req.url != '/favicon.ico' ? console.log('URL:' + req.url) : true 
         res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'})
         
         const myReader = fs.createReadStream('./new.html', 'utf8')
         myReader.pipe(res)
+    }) */
+
+    // When you need to return to server JSON-object:
+    const server = http.createServer((req, res) => {
+        req.url != '/favicon.ico' ? console.log('URL:' + req.url) : true 
+        res.writeHead(200, {'Content-Type': 'application/json; charset=utf-8'})
+        obj = {
+            name: 'Sardorkhuja',
+            lastName: 'Tukhtakhodjayev',
+            age: 18,
+            weight: 75
+        }
+        res.end(JSON.stringify(obj))
     })
     
     server.listen(3000, '192.168.0.103')
