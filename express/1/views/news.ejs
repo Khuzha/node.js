@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <title><%= obj.title %></title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Новость с id = <%= newsId %></h1>
+    <ul>
+        <% for(let key of obj.arr) { %>
+            <li><%= key %></li>
+        <% } %>
+    </ul>
+</body>
